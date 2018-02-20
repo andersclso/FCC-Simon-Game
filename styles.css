@@ -1,0 +1,232 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+/* ------------------------------------------------------------------------------------------------------- */
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #FDFDFD;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.mainContainer {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 25vh 0 25vh 0;
+}
+
+.title {
+	position: absolute;
+	top: 12%;
+	margin: 0 36% 0 36%;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
+.s {
+	color: #FD9191;
+}
+
+.i {
+	color: #F7F680;
+}
+
+.m {
+	color: #9EFCB4;
+}
+
+.o {
+	color: #94F6F2;
+}
+
+.n {
+	color: grey;
+}
+
+.gameContainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+}
+
+.row {
+	display: grid;
+	height: 33.33%;
+	width: 100%;
+}
+
+.topBot {
+	grid-auto-columns: 1fr;
+	margin: 0 33% 0 33%;
+}
+
+.mid {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.center {
+	margin: 25% 10% 15% 14%;
+}
+
+#display {
+	visibility: visible;
+	margin-top: 25px;
+	text-align: center;
+	color: grey;
+	letter-spacing: 5px;
+}
+
+.circles {
+	border: 15px solid;
+	border-radius: 50%;
+	background-color: #F5F5F5;
+	transition: 0.2s;
+}
+
+#red {
+	border-color: #FD9191;
+}
+
+#red.add {
+	background-color: #FD9191;
+}
+
+#yellow.add {
+	background-color: #F7F680;
+}
+
+#yellow {
+	border-color: #F7F680;
+}
+
+#green.add {
+	background-color: #9EFCB4;
+}
+
+#green {
+	border-color: #9EFCB4;
+}
+
+#blue.add {
+	background-color: #94F6F2;
+}
+
+#blue {
+	border-color: #94F6F2;
+}
+
+button:focus {
+	outline: none;
+}
+
+.setup1 {
+	margin-top: 30px;
+	padding: 10px 33% 10px 33%;
+	color: grey;
+}
+
+.startText {
+	float: right;
+}
+
+.setup2 {
+	padding: 0 33% 0 33%;
+}
+
+.setup2 button {
+  width: 34px;
+  height: 10px;
+  margin: 0 auto;
+  border: 2px solid grey;
+  border-radius: 20px;
+  box-shadow: 0px 1px 0px black;
+}
+
+.setup2 button:focus {
+  outline: none;
+}
+
+.setup2 button:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+#strictButton.on {
+	background-color: #9EFCB4;
+}
+
+#strictButton {
+	float: left;
+	background-color: #F67280;
+}
+
+#startButton.on {
+	background-color: #9EFCB4;
+}
+
+#startButton {
+	float: right;
+	background-color: #F2F2F2;
+}
+
+@media screen and (min-width: 415px) {
+	.mainContainer {
+		width: 465px;
+	}
+
+	.title {
+		margin: 0 197px 0 184px;
+		font-size: 28px;
+	}
+
+	.gameContainer {
+		height: 465px;
+	}
+
+	.display {
+		margin: 40px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.gameContainer {
+	 	height: 337.5px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

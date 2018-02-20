@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/simon.js"></script>
+	<title>Simon</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="title">
+			<span class="s">S</span><span class="i">I</span><span class="m">M</span><span class="o">O</span><span class="n">N</span>
+		</div>
+		<div class="gameContainer">
+			<div class="topBot row">
+				<button id="red" class="circles 1"></button>
+			</div>
+			<div class="mid row">
+				<button id="yellow" class="circles 4"></button>
+				<div class="center">
+					<h3 id="display">--</h3>
+				</div>
+				<button id="blue" class="circles 2"></button>
+			</div>
+			<div class="topBot row">
+				<button id="green" class="circles 3"></button>
+			</div>
+		</div>
+		<div class="config">
+			<div class="setup1"><span class="strictText">Strict</span><span class="startText">Start</span></div>
+			<div class="setup2">
+				<button id="strictButton" class="strictStart"></button>
+				<button id="startButton" class="strictStart"></button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
